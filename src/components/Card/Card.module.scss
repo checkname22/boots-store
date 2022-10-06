@@ -1,0 +1,47 @@
+.Card {
+  cursor: pointer;
+  width: 220px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #cecdcd;
+  border-radius: 40px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow:  0px 14px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
+  .CardFavourite {
+    cursor: pointer;
+    position: absolute;
+  }
+
+  h5 {
+    height: 34px;
+    margin: 5px auto;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .cardBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .CardPriceBox {
+      display: flex;
+      flex-direction: column;
+  
+      span {
+        font-size: 13px;
+        opacity: 0.5;
+        text-transform: uppercase;
+      }
+      b {
+        font-size: 14px;
+      }
+    }
+  }
+}
